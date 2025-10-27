@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>LC 滤波器自动加载音频信号</title>
+  <style>
+    body { background-color:#000; color:#fff; text-align:center; font-family:Arial,sans-serif; }
+    iframe { border:none; width:95%; height:600px; margin-top:15px; }
+    #tip { color:#00ffcc; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <h2>🎧 LC 滤波器自动加载音频信号</h2>
+  <p>此网页会自动从 GitHub 加载 MP3 并注入到电路输入端。</p>
+
+  <!-- GitHub 音频文件 -->
+  <audio controls autoplay loop>
+    <source src="https://github.com/xiaoyun6337/lc-audio-filter-demo/raw/refs/heads/main/sample-6s.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+
+  <!-- CircuitJS 电路示例 -->
+  <iframe src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3AmAbJALGJnMHZyQKzRgAc2xAnEgMzHGSkKoirEj5uRsCmAtGGACh0EBNgTgErMOXFhJUcM07tOq6OxXgBAGxBUkU+fmxIJrNTUhJxMeJPzFJ2MNiqRJVN1SgCAxmxMzANNPUyZbeEgqVARyOPiE+O9bahMqfDBUAhRjRihYSAhIAQB3YKCkMSDisuMQ-RBK8VCfACdGqrlWJr0Gzn0kVFLylozmvoEAcz0DXtMEejmFYoBnEFFZeX1DcwUAMwBDbRWuAQR+GZ3L5l2wujgtc4g6pZf0U047+HWBdu3XuRLTgLYoAexA5HAHxA2CsgzY+SKWnBYE4GAUsMwTBURAUghoigAYkiIhAIHwQIBWV0A+IYCAniYnLArwIrMuCJDmJEAUymATu06ax2Iy0Q9Ud8KQAlLgrACWKwALgcAHa+U5AA" allow="autoplay"></iframe>
+
+  <p id="tip">（若音频未自动播放，请手动点击播放器 ▶）</p>
+</body>
+</html>
